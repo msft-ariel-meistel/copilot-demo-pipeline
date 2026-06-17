@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "hooks": [
+    {
+      "name": "tool-guardian",
+      "event": "preToolUse",
+      "script": "scripts/guard.sh"
+    },
+    {
+      "name": "secrets-scan",
+      "event": "sessionEnd",
+      "script": "scripts/secrets-check.sh"
+    }
+  ]
+}
